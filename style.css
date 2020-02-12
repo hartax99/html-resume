@@ -1,0 +1,22 @@
+body { 
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	background-image: url("Unknown.jpeg"); 
+}
+
+h1  {background-color: rgba(255, 0, 0, 0.3);
+	height: 200px;}
+
+h1, h2 {
+	color: purple; 
+	font-family: 'Sigmar One', cursive;
+
+}
+
+/* This is demonstrating how a note in code works */
+
+#appetizers p {color: green;}
+
+.gold {color: gold;}
+
+#appetizers {color: red;}
