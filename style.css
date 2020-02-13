@@ -52,10 +52,9 @@ h2 {
   color: #FFCD00;
   margin-top: 10px;
   margin-right: 0px;
-  margin-left: 1;
+  margin-left: 1px;
   padding: .5em .5em .5em .5em;
   text-align: center;
-  background-image: url(images/line.png) repeat 200px;
 }
 
 h3 {
