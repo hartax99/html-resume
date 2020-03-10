@@ -15,7 +15,7 @@ h1 {
   margin-right: 0px;
   margin-left: 0px;
   padding: 1em 1em 1em 1em;
-  text-align: left;
+  text-align: center;
   background-color: rgba(2,2,2,.5);
 }
 
@@ -38,7 +38,6 @@ a:active {
 
 h1 {
   font: bold 1.5em 'Playfair Display', serif;
-  font-size: 2em;
   text-shadow: .1em .05em .1em lightslategray;
   color: #FFCD00;
 }
@@ -63,11 +62,6 @@ h3 {
   font-size:1em;
   text-shadow: .1em .05em .1em lightslategray;
   color: #ffff;
-}
-
-footer{
-  text-align: left;
-
 }
 dt {
   font-weight: bold;

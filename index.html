@@ -10,120 +10,328 @@
 		<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+<style>
+/*GRID STYLES START HERE*/
 
-		
-  	</head>
+			main {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: .25fr .1fr 1fr .25fr .25fr .25fr;
+                grid-template-areas:
+                "header header photo objective"
+                "soft career career career"
+                "edu leader leader leader"
+                "act scholar scholar scholar"
+                "footer footer footer footer" ;
+            }
 
-  	<body>
+        
+         
+            #header  { grid-area: header; }
+            #photo { grid-area: photo;}
+            #objective { grid-area: description;}
+            #edu { grid-area: edu;}
+            #scholar { grid-area: scholar;}
+            #soft { grid-area: soft;}
+            #career { grid-area: career;}
+            #leader { grid-area: leader;}
+            #act { grid-area: act;}
+            footer { grid-area: footer;}
+            
+
+            #header {
+            	display: flex-start 200px;
+            	width: 220px;
+            	height: 100px;
+            	margin-right: 50px;
+            	margin-left: 10px;
+            	padding: 0px;
+
+            }
+
+            #photo {
+            	display: flex-start;
+            	height: 500px;
+            	border-top: 0px solid #ccc;
+            	border-right: 0px solid #ccc;
+            	border-bottom: 0px solid #ccc;
+            	border-left: 0px solid #ccc;
+            	margin-right: 0px;
+            	margin-bottom: 15px;
+            	padding: 0px;
+            	
+
+            }
+
+             #contact {
+            	width: auto;
+            	height: auto;
+            	display: grid;
+            	justify-content: center;
+            	border-top: 0px solid #ccc;
+            	border-right: 0px solid #ccc;
+            	border-bottom: 0px solid #ccc;
+            	border-left: 0px solid #ccc;
+            	margin-right: 50px;
+            	margin-left: 10px;
+            	margin-bottom: 50px;
+            	padding: 9px;
+            	background-color: rgba(2,2,2,.7);
+            }
+ 
+            #soft, #act {
+            	display: flex-center;
+            	width: 220px;
+            	border-top: 0px solid #ccc;
+            	border-right: 0px solid #ccc;
+            	border-bottom: 0px solid #ccc;
+            	border-left: 0px solid #ccc;
+            	margin-right: 50px;
+            	margin-left: 10px;
+            	margin-bottom: 50px;
+            	padding: 9px;
+            	background-color: rgba(2,2,2,.7);
+
+            }
+
+            #edu {
+            	display: flex-center;
+            	width: 200px;
+            	border-top: 0px solid #ccc;
+            	border-right: 0px solid #ccc;
+            	border-bottom: 0px solid #ccc;
+            	border-left: 0px solid #ccc;
+            	margin-right: 50px;
+            	margin-left: 10px;
+            	margin-bottom: 50px;
+            	padding: 9px;
+            	background-color: rgba(2,2,2,.7);
+            	height: auto;
+
+            }
+
+            #objective {
+            	height: 329px;
+            	grid-area: description;
+            	display: flex-start;
+            	justify-content: center;
+            	align-content: flex-center ;
+            	grid-template-columns: repeat (1, 1fr);
+            	grid-template-rows: .25fr .1fr;
+            	grid-template-areas: 
+            		"objective" 
+            		"contact";
+            	padding: 9px;
+            	border-top: 0px solid #ccc;
+            	border-right: 0px solid #ccc;
+            	border-bottom: 0px solid #ccc;
+            	border-left: 0px solid #ccc;
+            	margin-right: 50px;
+            	margin-left: 10px;
+            	margin-top: 15px;
+            	margin-bottom: 50px;
+            	padding: 9px;
+            	background-color: rgba(2,2,2,.7);
+            }
+
+            #career {
+            	display: flex-start;
+            	border-top: 3px solid #ccc;
+            	border-bottom: 0px solid #ccc;
+            	margin-left: 10px;
+            	margin-right: 0px;
+            	margin-bottom: 50px;
+            	padding: 9px;
+            }
+
+            #leader {
+            	display: flex-center;
+            	border-top: 3px solid #ccc;
+            	border-bottom: 0px solid #ccc;
+            	margin-left: 10px;
+            	margin-right: 0px;
+            	margin-bottom: 0px;
+            	padding: 9px;
+            	height: auto;
+            }
+
+            #act {
+            	display: flex-end;
+            	border-top: 0px solid #ccc;
+            	border-bottom: 0px solid #ccc;
+            	margin-left: 10px;
+            	margin-right: 0px;
+            	margin-bottom: 50px;
+            	padding: 9px;
+            }
+
+            #scholar{
+            	display: flex-end;
+            	border-top: 3px solid #ccc;
+            	border-bottom: 0px solid #ccc;
+            	margin-left: 10px;
+            	margin-right: 0px;
+            	margin-bottom: 50px;
+            	padding: 9px;
+            }
+
+            #footer {
+            	display: flex-center;
+            	border-top: 3px solid #ccc;
+            	border-right: 3px solid #ccc;
+            	border-bottom: 3px solid #ccc;
+            	border-left: 3px solid #ccc;
+            	margin-right: 0px;
+            	padding: 9px;
+    
+            }
 
 
-		<h1>ANA HART RESUME</h1>
+	</style>
+</head>
 
-			<p><a href="https://anahartportfolio.wordpress.com/" target="_blank">Ana Hart</a><br>
+  <body>
+  	<main>
+
+  		<div id="header">
+  		<h1>ANA HART RESUME</h1>
+  		</div>
+
+  		<header>
+
+			<div id="photo">
+				<p><a href="https://anahartportfolio.wordpress.com/" target="_blank"><img src="analaundry.png" alt="A picture of Ana behind laundry machine doors" width="400" height="500"></a></p>
+			</div>
+	
+		</header>
+
+		<div id="description">
+
+			
+			<div id="objective">
+				<h2><strong>OBJECTIVE</strong></h2>
+				<p>To utilize self-awareness and interdisciplinary engagement through dance, media arts, and design to focus on creative expression and collaboration.</p>
+			</div>
+
+			<div id="contact">	
+				<p><a href="https://anahartportfolio.wordpress.com/" target="_blank">Ana Hart</a>
 				hartax@dukes.jmu.edu
+
 			</p>
+			</div>
 
-			<p><a href="https://anahartportfolio.wordpress.com/" target="_blank"><img src="analaundry.png" alt="A picture of Ana behind laundry machine doors" width="300" height="400"></a></p>
+		</div>
+			
+			<div id="soft">
+			<h2><strong>Software Proficiency</strong></h2>
+				<p>Adobe Creative Cloud (Photoshop, InDesign, Illustrator, Acrobat), <br>Canva, <br> MS Office (Word, Excel, PowerPoint), <br> WordPress, <br> audio editing software (Audacity and GarageBand), <br> video-editing software (Adobe Premiere Rush and iMovie), <br> basic understanding and use of front-end code (Sublime and Brackets)</p>
+			</div>
 
-			<h2><strong>OBJECTIVE</strong></h2>
-			<p>To utilize self-awareness and interdisciplinary engagement through dance and media arts &#38; design on a local and global scale.</p>
+			<div id="edu">
+				<h2><strong>EDUCATION</strong></h2>
+				<h3>May 2021: <a href="https://www.jmu.edu" target="_blank"> James Madison University</a>, Harrisonburg, VA</h3>
+				<ul>
+					<li>Bachelor of Arts in <a href="https://www.jmu.edu/theatredance/majors/dance.shtml" target="_blank">Dance</a></li>
+					<li>Bachelor of Arts in <a href="https://www.jmu.edu/smad/" target="_blank">Media Arts and Design</a></li>
+					<li>Minor in <a href="https://www.jmu.edu/honors/" target="_blank">Interdisciplinary Honors</a></li>
+				</ul>
+			</div>	
 
 
-			<h2><strong>EDUCATION</strong></h2>
-			<h3>May 2021: <a href="https://www.jmu.edu" target="_blank"> James Madison University</a>, Harrisonburg, VA</h3>
-			<ul>
-				<li>Bachelor of Arts in <a href="https://www.jmu.edu/theatredance/majors/dance.shtml" target="_blank">Dance</a></li>
-				<li>Bachelor of Arts in <a href="https://www.jmu.edu/smad/" target="_blank">Media Arts and Design</a></li>
-				<li>Minor in <a href="https://www.jmu.edu/honors/" target="_blank">Interdisciplinary Honors</a></li>
-			</ul>	
-
-
-
-			<h2><strong>SCHOLARSHIPS &#38; AWARDS</strong></h2>
-			<h3>JMU School of Media Arts and Design</h3>
+			<div id="scholar">
+				<h2><strong>SCHOLARSHIPS &#38; AWARDS</strong></h2>
+				<h3>JMU School of Media Arts and Design</h3>
 				
-				<div class="a">
-				<ul class="a">
-				<li><a href="https://www.jmu.edu/news/smad/2019/04-12-SMAD-banquet-2019.shtml" target="_blank">George Johnson Scholarship</a> ($1,600) &ndash; April 2019</li>
+					<div class="a">
+					<ul class="a">
+					<li><a href="https://www.jmu.edu/news/smad/2019/04-12-SMAD-banquet-2019.shtml" target="_blank">George Johnson Scholarship</a> ($1,600) &ndash; April 2019</li>
+					</ul>
+					</div>
+				<h3>JMU College of Visual and Performing Arts</h3>
+					<div class="a">
+					<ul class= "a">
+					<li>Rising Stars Endowment in the Arts Scholarship ($1000) &ndash; March 2019<br>
+					Dance Tuition Scholarship ($1,500) &ndash; May 2019<br>
+					Dance Summer Tuition Scholarship ($500) &ndash; April 2018<br>
+					Dance Outstanding Freshman Award</li> 			
 				</ul>
 				</div>
-			<h3>JMU College of Visual and Performing Arts</h3>
-				<div class="a">
-				<ul class= "a">
-				<li>Rising Stars Endowment in the Arts Scholarship ($1000) &ndash; March 2019<br>
-				Dance Tuition Scholarship ($1,500) &ndash; May 2019<br>
-				Dance Summer Tuition Scholarship ($500) &ndash; April 2018<br>
-				Dance Outstanding Freshman Award</li> 					   		  
-				</ul>
-				</div>
+		
 			<h3>General</h3>
 				<div class="a">
 				<ul class= "a">
 					<li>Agness S. Dingledine Memorial Scholarship ($2,500), JMU Alumni Association Renewable Legacy Scholarship ($1050), Charles &#38; Mary Henderson Scholarship ($1,400), Greater Madison Scholarship ($2,000)</li>
 				</ul>
 				</div>
+			</div>
 
-			<h2><strong>CAREER-RELATED EXPERIENCE</strong></h2>
-			<h3><a href="https://www.jmu.edu/global/" target="_blank">Center for Global Engagement</a>, Student Assistant &ndash; May 2018-Present</h3>
-				<div class="a">
-				<ul class= "a">
-				<li>Answer and direct calls, assist with workplace projects (including scanning, copying, labeling, filing, and utilizing Microsoft Word and Excel)</li>
-				</ul>
-				</div>
-			<h3><a href="https://abowlofgood.com" target="_blank">Bowl of Good Café</a>, Part-time Service Worker, Harrisonburg, VA &ndash; August 2016-Present</h3>
-				<div class="a">
-				<ul class= "a">
-				<li>Explained menu items and specials, maintained cleanliness, and offered excellent customer service in a friendly and cordial manner</li>
-				<li>Effectively worked in a team and coordinated prepping meals with coworkers</li>
-				</ul>
-				</div>
-			<h3>Fine Arts Academy, Harrisonburg High School, Harrisonburg, VA, &ndash; August 2013-June 2017</h3>
-				<div class="a">
-				<ul class= "a">
-				<li>Worked independently and collaboratively with peers and teachers in expressing local, global, and current social concepts through visual art, theatre, music, creative writing, and dance</li>
-				<li>Collaborated within multiple art disciplines while engaging in thoughtful and critical thinking, creative inquiry, and connecting with the Harrisonburg community</li>
-				</ul>
-				</div>
-			<h3>Fine Arts Academy Capstone Project &ndash; August 2016-June 2017</h3>
-				<div class="a">
-				<ul class= "a">
-				<li>Took the initiative and attended to the details of maintaining, organizing, and clearly communicating a rehearsal schedule with a team of 20 performers and artists in a fast-paced project environment </li>
-				</ul>
+			<div id="career">
+				<h2><strong>CAREER-RELATED EXPERIENCE</strong></h2>
+				<h3><a href="https://www.jmu.edu/global/" target="_blank">Center for Global Engagement</a>, Student Assistant &ndash; May 2018-Present</h3>
+					<div class="a">
+					<ul class= "a">
+					<li>Answer and direct calls, assist with workplace projects (including scanning, copying, labeling, filing, and utilizing Microsoft Word and Excel)</li>
+					</ul>
+					</div>
+				<h3><a href="https://abowlofgood.com" target="_blank">Bowl of Good Café</a>, Part-time Service Worker, Harrisonburg, VA &ndash; August 2016-Present</h3>
+					<div class="a">
+					<ul class= "a">
+					<li>Explained menu items and specials, maintained cleanliness, and offered excellent customer service in a friendly and cordial manner</li>
+					<li>Effectively worked in a team and coordinated prepping meals with coworkers</li>
+					</ul>
+					</div>
+				<h3>Fine Arts Academy, Harrisonburg High School, Harrisonburg, VA, &ndash; August 2013-June 2017</h3>
+					<div class="a">
+					<ul class= "a">
+					<li>Worked independently and collaboratively with peers and teachers in expressing local, global, and current social concepts through visual art, theatre, music, creative writing, and dance</li>
+					<li>Collaborated within multiple art disciplines while engaging in thoughtful and critical thinking, creative inquiry, and connecting with the Harrisonburg community</li>
+					</ul>
+					</div>
+				<h3>Fine Arts Academy Capstone Project &ndash; August 2016-June 2017</h3>
+					<div class="a">
+					<ul class= "a">
+					<li>Took the initiative and attended to the details of maintaining, organizing, and clearly communicating a rehearsal schedule with a team of 20 performers and artists in a fast-paced project environment </li>
+					</ul>
+					</div>
+			</div>
+
+			<div id="leader">
+				<h2><strong>LEADERSHIP</strong></h2>
+				<h3>Honors 100, Teacher’s Assistant</h3>
+					<div class="a">
+					<ul class= "a">
+					<li>Co-taught Honors 100, a required class for first years in JMU’s Interdisciplinary Honors Program.</li>
+					<li>Created lesson plans, graded assignments, and facilitated discussion</li>
+					</ul>
+					</div>
+				<h3>Mid-Atlantic Summer Dance Intensive, Teacher’s Assistant</h3>
+					<div class="a">
+					<ul class= "a">
+					<li>Assisted in demonstrating material in class, acted as co- supervisor of students, co-planned and lead evening activities for part of the intensive. </li>
+					</ul>
+					</div>
+				<h3>Interfaith Peace Camp, Counselor</h3>
+					<div class="a">
+					<ul class= "a">
+					<li>Provided leadership and led discussions with culturally diverse groups of pre-teens at a week-long interfaith summer camp.</li>
+					</ul>
+					</div>
 				</div>
 
-
-			<h2><strong>LEADERSHIP</strong></h2>
-			<h3>Honors 100, Teacher’s Assistant</h3>
-				<div class="a">
-				<ul class= "a">
-				<li>Co-taught Honors 100, a required class for first years in JMU’s Interdisciplinary Honors Program.</li>
-				<li>Created lesson plans, graded assignments, and facilitated discussion</li>
-				</ul>
-				</div>
-			<h3>Mid-Atlantic Summer Dance Intensive, Teacher’s Assistant</h3>
-				<div class="a">
-				<ul class= "a">
-				<li>Assisted in demonstrating material in class, acted as co- supervisor of students, co-planned and lead evening activities for part of the intensive. </li>
-				</ul>
-				</div>
-			<h3>Interfaith Peace Camp, Counselor</h3>
-				<div class="a">
-				<ul class= "a">
-				<li>Provided leadership and led discussions with culturally diverse groups of pre-teens at a week-long interfaith summer camp.</li>
-				</ul>
-				</div>
-
+			<div id= "act">
 			<h2><strong>ACTIVITIES </strong></h2>
 				<div class="a">
 				<ul class= "a">
 				<li><a href="https://www.jmu.edu/theatredance/experiences/student-organizations.shtml" target="_blank">Dance Theatre (Student Organization)</a>, James Madison University &ndash; September 2017-Current</li>
 				</ul>
 				</div>
+			</div>
+
 			<footer> 
 				<p>All content &copy; 2020, Ana Hart</p>
 			</footer>
 
-
+		</main>
 	</body>
 </html>
 
