@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
   		<meta name="description" content="Ana Hart's Professional Resume.">
@@ -40,8 +40,10 @@
             
 
             #header {
-            	display: flex-start 200px;
-            	width: 220px;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
+            	width: 240px;
             	height: 100px;
             	margin-right: 50px;
             	margin-left: 10px;
@@ -50,7 +52,9 @@
             }
 
             #photo {
-            	display: flex-start;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
             	height: 500px;
             	border-top: 0px solid #ccc;
             	border-right: 0px solid #ccc;
@@ -64,10 +68,12 @@
             }
 
              #contact {
-            	width: auto;
-            	height: auto;
-            	display: grid;
+            	width: 300px;
+            	height: 84px;
+            	display: flex;
+            	flex-direction: column;
             	justify-content: center;
+            	align-items: center;
             	border-top: 0px solid #ccc;
             	border-right: 0px solid #ccc;
             	border-bottom: 0px solid #ccc;
@@ -80,7 +86,9 @@
             }
  
             #soft, #act {
-            	display: flex-center;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
             	width: 220px;
             	border-top: 0px solid #ccc;
             	border-right: 0px solid #ccc;
@@ -95,7 +103,9 @@
             }
 
             #edu {
-            	display: flex-center;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
             	width: 200px;
             	border-top: 0px solid #ccc;
             	border-right: 0px solid #ccc;
@@ -110,13 +120,16 @@
 
             }
 
-            #objective {
-            	height: 329px;
+            #objective{
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
+            	height: 250px;
             	grid-area: description;
-            	display: flex-start;
-            	justify-content: center;
-            	align-content: flex-center ;
-            	grid-template-columns: repeat (1, 1fr);
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-end;
+            	grid-template-columns: repeat(1, 1fr);
             	grid-template-rows: .25fr .1fr;
             	grid-template-areas: 
             		"objective" 
@@ -130,12 +143,14 @@
             	margin-left: 10px;
             	margin-top: 15px;
             	margin-bottom: 50px;
-            	padding: 9px;
+            	padding: 50px;
             	background-color: rgba(2,2,2,.7);
             }
 
             #career {
-            	display: flex-start;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
             	border-top: 3px solid #ccc;
             	border-bottom: 0px solid #ccc;
             	margin-left: 10px;
@@ -145,7 +160,9 @@
             }
 
             #leader {
-            	display: flex-center;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
             	border-top: 3px solid #ccc;
             	border-bottom: 0px solid #ccc;
             	margin-left: 10px;
@@ -156,7 +173,9 @@
             }
 
             #act {
-            	display: flex-end;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
             	border-top: 0px solid #ccc;
             	border-bottom: 0px solid #ccc;
             	margin-left: 10px;
@@ -166,7 +185,9 @@
             }
 
             #scholar{
-            	display: flex-end;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
             	border-top: 3px solid #ccc;
             	border-bottom: 0px solid #ccc;
             	margin-left: 10px;
@@ -176,14 +197,15 @@
             }
 
             #footer {
-            	display: flex-center;
+            	display: flex;
+            	flex-direction: column;
+            	justify-content: flex-start;
             	border-top: 3px solid #ccc;
             	border-right: 3px solid #ccc;
             	border-bottom: 3px solid #ccc;
             	border-left: 3px solid #ccc;
             	margin-right: 0px;
             	padding: 9px;
-    
             }
 
 
@@ -194,7 +216,7 @@
   	<main>
 
   		<div id="header">
-  		<h1>ANA HART RESUME</h1>
+  		<h1>ANA <br> HART RESUME</h1>
   		</div>
 
   		<header>
